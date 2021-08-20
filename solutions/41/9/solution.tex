@@ -1,0 +1,74 @@
+The given quadratic equation can be written in the matrix form as
+\begin{align}
+    \vec{x}^T\myvec{4&-2\\-2&1}\vec{x}+2\myvec{-6&3}\vec{x}+9=0\label{eq:solutions/41/9/eq:1}
+\end{align}
+Calculating the parameters,we get
+\begin{align}
+    \mydet{\vec{V}}=\mydet{4&-2\\-2&1}=0\\
+    \mydet{\vec{V}&\vec{u}\\\vec{u}^T&f}=\mydet{4&-2&-6\\-2&1&3\\-6&3&9}=0
+\end{align}
+Therefore the given parabola equation is a degenerate.The quadratic equation corresponds to a pair of coincident straight lines.\par
+The characteristic equation of $\vec{V}$ will be
+\begin{align}
+    \mydet{\vec{V}-\lambda\vec{I}}&=\mydet{4-\lambda&-2\\-2&1-\lambda}\\
+    &=\lambda^2-5\lambda\\
+    &\lambda_1=0,\lambda_2=5
+\end{align}
+The eigen vectors are the nullspace of the matrix $\vec{V}-\lambda\vec{I}$.For $\lambda_1=0$
+\begin{align}
+    \myvec{4&-2\\-2&1}\xleftrightarrow{R_2=2R_2+R_1}\myvec{4&-2\\0&0}\\
+    p_1=\myvec{1\\2}
+\end{align}
+Therefore the normalized eigen vector will be
+\begin{align}
+    p_1=\myvec{\frac{1}{\sqrt{5}}\\\frac{2}{\sqrt{5}}}
+\end{align}
+For $\lambda_2=5$
+\begin{align}
+    \myvec{-1&-2\\-2&-4}\xleftrightarrow{R_2=R_2-2R_1}\myvec{-1&-2\\0&0}\\
+    p_2=\myvec{-2\\1}
+\end{align}
+Therefore the normalized eigen vector will be
+\begin{align}
+    p_2=\myvec{-\frac{2}{\sqrt{5}}\\\frac{1}{\sqrt{5}}}
+\end{align}
+Therefore the transformation matrix will be
+\begin{align}
+    \vec{P}=\myvec{p_1&p_2}=\myvec{\frac{1}{\sqrt{5}}&-\frac{2}{\sqrt{5}}\\\frac{2}{\sqrt{5}}&\frac{1}{\sqrt{5}}}
+\end{align}
+The value of $\eta$ will be
+\begin{align}
+    \eta&=2p_1^T\vec{u}\\
+    &=2\myvec{\frac{1}{\sqrt{5}}&\frac{2}{\sqrt{5}}}\myvec{-6\\3}\\
+    &=0
+\end{align}
+A point on the line can be found by using to following formula
+\begin{align}
+    \myvec{\vec{u}^T+\frac{\eta}{2}p_1^T\\\vec{V}}c=\myvec{-f\\\frac{\eta}{2}p_1-\vec{u}}\\
+    \myvec{\vec{u}^T\\\vec{V}}c=\myvec{-f\\-\vec{u}}\\
+    \myvec{-6&3\\4&-2\\-2&1}c=\myvec{-9\\6\\-3}
+\end{align}
+Writing it in augmented form, we get
+\begin{align}
+    \myvec{-6&3&-9\\4&-2&6\\-2&1&-3}\xleftrightarrow{R_3=R_3-\frac{R_1}{3}}\myvec{-6&3&-9\\4&-2&6\\0&0&0}\\
+    \xleftrightarrow{R_2=\frac{3}{2}R_2+R_1}\myvec{-6&3&-9\\0&0&0\\0&0&0}
+\end{align}
+Therefore we can see that the point $c=\myvec{1\\-1}$ lies on the line.
+{Equation of the straight line}
+Applying affine transformation we get
+\begin{align}
+    \vec{y}^T\vec{D}\vec{y}=-\eta\myvec{1&0}\vec{y}\\
+    \vec{y}^T\myvec{0&0\\0&5}\vec{y}=0\\
+    5y^2=0
+\end{align}
+Therefore the transformed line is $y=0$,which in vector form will be $\myvec{0&1}\vec{y}=0$.\par
+Taking the Inverse affine transformation we get
+\begin{align}
+    \myvec{0&1}\brak{P^T\brak{\vec{x}-c}}=0\\
+    \myvec{0&1}\myvec{\frac{1}{\sqrt{5}}&\frac{2}{\sqrt{5}}\\-\frac{2}{\sqrt{5}}&\frac{1}{\sqrt{5}}}\brak{\vec{x}-c}=0\\
+    \myvec{-\frac{2}{\sqrt{5}}&\frac{1}{\sqrt{5}}}\brak{\vec{x}-c}=0\\
+    \myvec{-\frac{2}{\sqrt{5}}&\frac{1}{\sqrt{5}}}\vec{x}-\myvec{-\frac{2}{\sqrt{5}}&\frac{1}{\sqrt{5}}}\myvec{1\\-1}=0\\
+    \myvec{-\frac{2}{\sqrt{5}}&\frac{1}{\sqrt{5}}}\vec{x}+\frac{3}{\sqrt{5}}=0\\
+    \myvec{2&-1}\vec{x}=3
+\end{align}
+Therefore the equation of coincident lines is $\brak{2x-y-3}=0$.

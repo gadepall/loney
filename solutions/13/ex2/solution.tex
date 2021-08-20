@@ -1,0 +1,143 @@
+The general equation second degree is given by
+\begin{equation}\label{eq:solutions/13/ex2/eq1}
+	ax^2 + 2bxy + cy^2 + 2dx + 2ey + f = 0
+\end{equation}
+\eqref{eq:solutions/13/ex2/eq1} represents pair of straight lines if
+\begin{equation}\label{eq:solutions/13/ex2/eq2}
+	\mydet{ a & h & d\\
+			h & c & e\\
+			d & e & f} = 0
+\end{equation}
+From \eqref{eq:solutions/13/ex2/eq2}, given equation represents pair of straight lines if 
+\begin{equation}\label{eq:solutions/13/ex2/eq3}
+	\mydet{ 6 & h & 11\\
+			h & 12 & \frac{31}{2}\\
+			11 & \frac{31}{2} & 20} = 0
+\end{equation}
+\begin{equation}\label{eq:solutions/13/ex2/eq4}
+	\implies h = \frac{17}{2} \text{ or } h = \frac{171}{20}
+\end{equation}
+Verify  \eqref{eq:solutions/13/ex2/eq4} using python code from
+\begin{lstlisting}
+https://github.com/shreeprasadbhat/matrix-theory/tree/master/assignment5/codes/solve_determinant.py
+\end{lstlisting}
+The general equation second degree is given by
+\begin{equation}\label{eq:solutions/13/ex2/eq5}
+	ax^2 + 2bxy + cy^2 + 2dx + 2ey + f = 0
+\end{equation}
+Let $(\alpha,\beta)$ be their point of intersection, then
+\begin{equation}\label{eq:solutions/13/ex2/eq6}
+	\myvec{ a & h\\ h & b}\myvec{\alpha \\ \beta} = \myvec{-d \\ -e}
+\end{equation}
+Under \textit{Affine transformation},
+\begin{align}
+	\vec{x} &= \vec{M}\vec{y} + c\\
+	\myvec{x \\ y} &= \myvec{1 & 0 \\ 0 & 1} \myvec{X \\ Y} + \myvec{\alpha \\ \beta}\\
+	\label{eq:solutions/13/ex2/eq7}\myvec{x \\ y} &= \myvec{X+\alpha \\ Y+\beta}
+\end{align}
+\eqref{eq:solutions/13/ex2/eq5} under transformation \eqref{eq:solutions/13/ex2/eq7} will become,
+\begin{equation}\label{eq:solutions/13/ex2/eq8}
+	aX^2 + 2bXY + cY^2 = 0
+\end{equation}
+\begin{equation}\label{eq:solutions/13/ex2/eq9}
+	\myvec{X & Y} \myvec{a & h \\ h & b} \myvec{X \\ Y} = 0
+\end{equation}
+%\begin{equation}\label{eq:solutions/13/ex2/eq10}
+%	\vec{X}^T\vec{V}\vec{X} = 0
+%\end{equation}
+\begin{equation}\label{eq:solutions/13/ex2/eq11}
+	\myvec{X & Y} \myvec{u_1 & v_1 \\ u_2 & v_2} \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{u_1 & u_2 \\ v_1 & v_2} \myvec{X \\ Y} = 0
+\end{equation}
+\begin{equation}\label{eq:solutions/13/ex2/eq12}
+	\myvec{X^\prime & Y^\prime}  \myvec{\lambda_1 & 0\\ 0 & \lambda_2} \myvec{X^\prime \\ Y^\prime} = 0
+\end{equation}
+where $X^\prime = Xu_1 + Yu_2$ and $Y^\prime = Xv_1 + Yv_2$
+\begin{equation}\label{eq:solutions/13/ex2/eq13}
+	\implies \lambda_1 (X^\prime)^2 + \lambda_2 (Y^\prime)^2 = 0
+\end{equation}
+This is called \textit{Spectral decomposition} of matrix
+\begin{align}
+	X^\prime &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}Y^\prime\\
+	u_1X + u_2Y &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1X + v_2Y)\\
+	\label{eq:solutions/13/ex2/eq14}u_1(x-\alpha) + u_2(y-\beta) &= \pm \sqrt{-\frac{\lambda_2}{\lambda_1}}(v_1(x-\alpha) + v_2(y-\beta))
+\end{align}
+Given equation is
+\begin{equation}\label{eq:solutions/13/ex2/eq15}
+	6x^2 + 17xy + 12y^2 + 22x + 31y + 20 = 0
+\end{equation}
+Substituting in \eqref{eq:solutions/13/ex2/eq6}
+\begin{align}
+	\label{eq:solutions/13/ex2/eq16}\myvec{ 6 & \frac{17}{2}\\\frac{17}{2} & 12}\myvec{\alpha \\ \beta} = \myvec{-11 \\ -\frac{31}{2}} \\
+	\label{eq:solutions/13/ex2/eq17}\implies \myvec{\alpha \\ \beta} = \myvec{1 \\ -2}
+\end{align}
+Verify  \eqref{eq:solutions/13/ex2/eq17} using python code from
+\begin{lstlisting}
+https://github.com/shreeprasadbhat/matrix-theory/tree/master/assignment5/codes/find_intersection.py
+\end{lstlisting}
+{Taking $h=\frac{17}{2}$}
+\begin{align}
+	\vec{V} &= \vec{P}\vec{D}\vec{P}^T\\
+	\label{eq:solutions/13/ex2/eq18}\vec{V} &= \myvec{ 6 & \frac{17}{2}\\ \frac{17}{2} & 12}\\
+	\label{eq:solutions/13/ex2/eq19}\vec{P} &= \myvec{\frac{-5\sqrt{13} - 6}{17} & \frac{-6 + 5\sqrt{13}}{17}\\ 1 & 1}\\
+	\label{eq:solutions/13/ex2/eq20}\vec{D} &= \myvec{9 - \frac{5\sqrt{13}}{2} & 0\\ 0 & 9 + \frac{5\sqrt{13}}{2}}
+\end{align}
+Verify  \eqref{eq:solutions/13/ex2/eq19} and \eqref{eq:solutions/13/ex2/eq20} using python code from
+\begin{lstlisting}
+https://github.com/shreeprasadbhat/matrix-theory/tree/master/assignment5/codes/diagonalize1.py
+\end{lstlisting}
+Substituting \eqref{eq:solutions/13/ex2/eq17}, \eqref{eq:solutions/13/ex2/eq19} and \eqref{eq:solutions/13/ex2/eq20} in \eqref{eq:solutions/13/ex2/eq14},
+\begin{multline}\label{eq:solutions/13/ex2/eq21}
+	\frac{-5\sqrt{13} - 6}{17}(x+1) + (y-2) \\= \pm \sqrt{-\frac{9 + \frac{5\sqrt{13}}{2}}{9 - \frac{5\sqrt{13}}{2}}}\left(\frac{-6 + 5\sqrt{13}}{17}(x+1) + (y+2)\right)
+\end{multline}
+Simplifying \eqref{eq:solutions/13/ex2/eq21},
+\begin{align}
+	\label{eq:solutions/13/ex2/eq22}2x + 3y + 4 = 0 \text{ and } 3x + 4y + 5 = 0\\
+	\implies (2x + 3y + 4)(3x + 4y + 5) = 0
+\end{align}
+Verify  \eqref{eq:solutions/13/ex2/eq22} using python code from
+\begin{lstlisting}
+https://github.com/shreeprasadbhat/matrix-theory/tree/master/assignment5/codes/calculate1.py
+\end{lstlisting}
+
+%\renewcommand{\thefigure}{\theenumi.\arabic*}
+%\renewcommand{\thefigure}{\thesection.\arabic}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{./solutions/13/ex2/fig/figure_1.png}
+	\caption{Pair of straight lines $3x + 4y + 5 = 0$ and $2x + 3y + 4 = 0$}
+	\label{eq:solutions/13/ex2/fig:figure1}
+\end{figure}
+{Taking $h=\frac{171}{20}$}
+\begin{align}
+	\vec{V} &= \vec{P}\vec{D}\vec{P}^T\\
+	\vec{V} &= \myvec{ 6 & \frac{171}{2}\\ \frac{171}{2} & 12}\\
+	\label{eq:solutions/13/ex2/eq23}\vec{P} &= \myvec{\frac{-\sqrt{3649} - 20}{57} & \frac{-20 + \sqrt{3649}}{57}}\\
+	\label{eq:solutions/13/ex2/eq24}\vec{D} &= \myvec{9 - \frac{3\sqrt{3649}}{20} & 0\\ 0 & 9 + \frac{3\sqrt{3649}}{20}}
+\end{align}
+Verify  \eqref{eq:solutions/13/ex2/eq23} and \eqref{eq:solutions/13/ex2/eq24} using python code from
+\begin{lstlisting}
+https://github.com/shreeprasadbhat/matrix-theory/tree/master/assignment5/codes/diagonalize2.py
+\end{lstlisting}
+Substituting \eqref{eq:solutions/13/ex2/eq17},\eqref{eq:solutions/13/ex2/eq23} and \eqref{eq:solutions/13/ex2/eq24} in \eqref{eq:solutions/13/ex2/eq14}, 
+\begin{multline}\label{eq:solutions/13/ex2/eq25}
+	\frac{-\sqrt{3649} - 20}{57}(x+1) + (y-2) \\= \pm 
+	\sqrt{-\frac{9 + \frac{3\sqrt{3649}}{20}}{9 - \frac{3\sqrt{3649}}{20}}}\\
+	\left(\frac{-20 + \sqrt{3649}}{57}(x+1) + (y+2)\right)
+\end{multline}
+Simplifying \eqref{eq:solutions/13/ex2/eq24},
+\begin{align}
+	\label{eq:solutions/13/ex2/eq26}2x + 3y + 4 = 0 \text{ and } 3x + 4y + 5 = 0\\
+	\label{eq:solutions/13/ex2/eq27}\implies (2x + 3y + 4)(3x + 4y + 5) = 0
+\end{align}
+Verify  \eqref{eq:solutions/13/ex2/eq25} using python code from
+\begin{lstlisting}
+https://github.com/shreeprasadbhat/matrix-theory/tree/master/assignment5/codes/calculate2.py
+\end{lstlisting}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\columnwidth]{./solutions/13/ex2/fig/figure_2.png}
+	\caption{Pair of straight lines $4x + 5y + \frac{20}{3} = 0$ and $5x + 8y + 10 = 0$}
+	\label{eq:solutions/13/ex2/fig:figure2}
+\end{figure}
+%\renewcommand{\thefigure}{\theenumi}
+

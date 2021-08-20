@@ -1,0 +1,41 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.linalg import norm
+import math
+Assignment 6 :
+
+Given Second Order equation :
+
+$x^2+10/3xy+y^2+-5x-7y+6=0$
+
+# importing the libraries 
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.linalg import norm
+import math
+
+In [15]:
+
+V=np.array([[6,5.5],[5.5,-10]])
+u=np.array([[0.5],[11.5]])
+f=-35
+delta=np.block([[V,u],[u.T,f]])
+print("V\n",V)
+print("\nu\n",u)
+print("\nf",f)
+print("\nMatrix delta\n",delta)
+print("\nDeterminant of delta")
+round(np.linalg.det(delta),10)
+
+
+x = np.linspace(-5,5,100)
+y_1 = 1.111111*x+1.6666 # straight line 1
+y_2 = -*x+7 # straighe line 2
+plt.plot(x, y_1, '-r', label='X+9y=15')
+plt.plot(x, y_2, '-b', label='X+y-7=0')
+plt.title('Graph of two straight lines')
+plt.xlabel('x', color='#1C2833')
+plt.ylabel('y', color='#1C2833')
+plt.legend(loc='best')
+plt.grid()
+plt.show()
