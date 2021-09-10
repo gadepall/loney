@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  10 SEP 2021 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  10 SEP 2021 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1454,6 +1454,9 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
 File: ot1txr.fd 2000/12/15 v3.1
 ) (./gvv_loney_coord.aux
 
+LaTeX Warning: Label `2/2/3eq5' multiply defined.
+
+
 LaTeX Warning: Label `2/22/t1' multiply defined.
 
 
@@ -2753,10 +2756,10 @@ Package rerunfilecheck Info: File `gvv_loney_coord.out' has not changed.
 (rerunfilecheck)             Checksum: 22034872D68E469B19F0045BAAAD04E2;1285.
  ) 
 Here is how much of TeX's memory you used:
- 49779 strings out of 478994
- 1113863 string characters out of 5864751
- 1667208 words of memory out of 5000000
- 64436 multiletter control sequences out of 15000+600000
+ 49781 strings out of 478994
+ 1113883 string characters out of 5864751
+ 1667278 words of memory out of 5000000
+ 64438 multiletter control sequences out of 15000+600000
  491289 words of font info for 216 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  102i,22n,111p,702b,2358s stack positions out of 5000i,500n,10000p,200000b,80000s
