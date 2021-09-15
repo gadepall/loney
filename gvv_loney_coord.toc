@@ -1,13 +1,13 @@
 \contentsline {section}{\numberline {1} Coordinates}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}1 }{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}2 }{2}{subsection.1.2}%
-\contentsline {section}{\numberline {2} The Straight Line}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}6}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3} The Circle}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}17}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {1.2}2 }{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2} The Straight Line}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}6}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3} The Circle}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}17}{3}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}18}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Pair of Straight Lines}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}13}{8}{subsection.4.1}%
-\contentsline {section}{\numberline {5}General Equation. Tracing of Curves}{33}{section.5}%
-\contentsline {subsection}{\numberline {5.1}40}{33}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}41}{51}{subsection.5.2}%
+\contentsline {section}{\numberline {4}Pair of Straight Lines}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}13}{7}{subsection.4.1}%
+\contentsline {section}{\numberline {5}General Equation. Tracing of Curves}{32}{section.5}%
+\contentsline {subsection}{\numberline {5.1}40}{32}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}41}{50}{subsection.5.2}%
