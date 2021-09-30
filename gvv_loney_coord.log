@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  22 SEP 2021 19:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  30 SEP 2021 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -431,7 +431,7 @@ Package: cite 2015/02/27  v 5.5
 Package: cases 2020/03/29 ver 3.2
 \numc@numwid=\dimen193
 )
-(/usr/share/texmf-dist/tex/latex/subfig/subfig.sty
+(/home/user/texmf/tex/latex/tfslatex/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
@@ -2744,7 +2744,7 @@ Package rerunfilecheck Info: File `gvv_loney_coord.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  49834 strings out of 478994
- 1114996 string characters out of 5864751
+ 1114987 string characters out of 5864752
  1660770 words of memory out of 5000000
  64468 multiletter control sequences out of 15000+600000
  491289 words of font info for 216 fonts, out of 8000000 for 9000
@@ -2762,7 +2762,7 @@ xfonts/txsyc.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on gvv_loney_coord.pdf (72 pages, 1283688 bytes).
+Output written on gvv_loney_coord.pdf (72 pages, 1283677 bytes).
 PDF statistics:
  3141 PDF objects out of 3580 (max. 8388607)
  2873 compressed objects within 29 object streams
