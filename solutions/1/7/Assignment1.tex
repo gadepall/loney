@@ -1,0 +1,36 @@
+The distance between two vectors is given by 
+\begin{align}
+\norm{\vec{A}-\vec{B}}=\sqrt{\myvec{\vec{A}-\vec{B}}^
+\top \myvec{\vec{A}-\vec{B}}}
+\end{align}
+Let $\vec{A}={\myvec{am_1^2\\2am_1}, \vec{B}=\myvec{am_2^2\\2am_2}}$
+\begin{align}
+\vec{A}-\vec{B}&=\myvec{am_1^2\\2am_1}-\myvec{am_2^2\\2am_2}
+\\&=\myvec{am_1^2-am_2^2\\2am_1-2am_2}
+\\&=a\myvec{m_1^2-m_2^2\\2\myvec{m_1-m_2}}
+\\&=a\myvec{m_1-m_2}\myvec{m_1+m_2\\2}
+\end{align}
+by using the property of $\norm{k\vec{A}}=\abs{k} \,\norm{\vec{A}}$
+\begin{align}
+\norm{\vec{A}-\vec{B}}&=\norm{a\myvec{m_1-m_2}\myvec{m_1+m_2\\2}}
+\end{align}
+\begin{align}
+=\abs{a\myvec{m_1-m_2}}\norm{\myvec{m_1+m_2\\2}}
+\end{align}
+\begin{align}
+&=\abs{a\myvec{m_1-m_2}}\sqrt{\myvec{m_1+m_2\\2}^
+\top\myvec{m_1+m_2\\2}}
+\end{align}
+\begin{align}
+&=\abs{a\myvec{m_1-m_2}}\sqrt{\myvec{m_1+m_2&&2}\myvec{m_1+m_2\\2}}
+\end{align}
+\begin{align}
+&=\abs{a\myvec{m_1-m_2}}\sqrt{\myvec{m_1+m_2}^2+\myvec{2}^2}\label{eq2}
+\end{align}
+\begin{align}
+&=\abs{a\myvec{m_1-m_2}}\sqrt{\myvec{m_1+m_2}^2+4}
+\end{align}
+Distance between $(am_1^2,2am_1)$ and $(am_2^2,2am_2)$ is
+\begin{align}
+&=\abs{a\myvec{m_1-m_2}}\sqrt{\myvec{m_1+m_2}^2+4}
+\end{align}
