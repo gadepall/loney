@@ -1,13 +1,13 @@
 The distance between two vectors is given by 
 \begin{align}
-\norm{\vec{A}-\vec{B}}
-\label{eq5}
+\label{1/5/eq:eq5}
+\norm{\vec{A}-\vec{B}}&= \sqrt{\myvec{\vec{A}-\vec{B}}^\top\myvec{\vec{A}-\vec{B}}}\\
 \end{align}
 \begin{align}
-\norm{\vec{A}-\vec{B}}&= \sqrt{\myvec{\vec{A}-\vec{B}}^\intercal\myvec{\vec{A}-\vec{B}}}\\
-\norm{\vec{A}-\vec{B}}&=\sqrt{\myvec{{\myvec{b+c\\c+a} -\myvec{c+a\\a+b}}}^\intercal \myvec{{\myvec{b+c\\c+a} -\myvec{c+a\\a+b}}}}\\
-\norm{\vec{A}-\vec{B}}&=\sqrt{\myvec{b-a\\c-b}^\intercal \myvec{b-a\\c-b}}\\
-\norm{\vec{A}-\vec{B}}&=\sqrt{\myvec{b-a & c-b}\myvec{b-a\\c-b}} \\
-\norm{\vec{A}-\vec{B}}&=\sqrt{\myvec{(b-a)^2+(c-b)^2}} \\
-\norm{\vec{A}-\vec{B}}&=\sqrt{a^2+2b^2+c^2-2ab-2cb}
+	\because \vec{A}-\vec{B}&=\myvec{b+c\\c+a} -\myvec{c+a\\a+b}\\
+&=\myvec{b-a\\c-b},
+\end{align}
+\begin{align}\brak{\vec{A}-\vec{B}}^{\top}\brak{\vec{A}-\vec{B}}
+	&=\sqrt{\myvec{b-a & c-b}\myvec{b-a\\c-b}} \\
+	&=\sqrt{\myvec{(b-a)^2+(c-b)^2}} 
 \end{align}
